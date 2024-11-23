@@ -25,5 +25,15 @@ The Factory Design Pattern consists of the following components:
 
 client code : 
 
-    AnimalFactory factory = new AnimalFactory(); // factory 
-    Animal animal = new factory.get("DOG"); // Declared Type = Animal, Runtime Type = Dog
+    
+
+### Client Code:
+
+```java
+AnimalFactory factory = new AnimalFactory(); // factory 
+Animal animal = new factory.get("DOG"); // Declared Type = Animal, Runtime Type = Dog
+
+dog.displayName();
+
+System.out.println(dog.getClass().getName()); // Outputs the runtime class of the object
+System.out.println(dog instanceof Animal);   // Outputs true
